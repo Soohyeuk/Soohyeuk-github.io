@@ -48,24 +48,40 @@ h1 {
 } 
 
 .left-container {
+    display: inline;
     width: 20%;
-
+    padding-left: 20px;
 }
 
 .middle-container {
     width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
-
+    text-align: center; 
+    line-height: 60px;
 }
 
 .right-container {
+    display: inline-block;
     width: 20%;
-    display: flex;
-    justify-content: space-evenly;
+    height: 60px;
+    text-align: end;
+    padding-right: 20px;
+    text-align: center; 
+    line-height: 60px;
 }
+
+#dil {
+    padding-right: 10px;
+}
+
+.main-img {
+    display: inline-block;
+}
+
+.main-title {
+    display: inline;
+}
+
 
 /* header ends */
 
@@ -76,46 +92,45 @@ h1 {
     width: 100%;
     height: 450px;
     background-color: black;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
 .hero-image {
     height: 406px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.arrow-asset {
-    height: 40px;
-}
-
-.arrow-asset:first-child {
-    padding-left: 10px;
-}
-
-.arrow-asset:last-child {
-    padding-right: 10px;
-}
 /* hero ends */
 
 
 /* main */
 .main-content {
-
     width: 100%;
     height: 280px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .main-container {
     width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    text-align: left;
+    padding-left: 15%;
+    
+}
 
+.content-header {
+    padding-bottom: 10px;
+}
+
+.content-body {
+    padding-bottom: 20px;
+}
+
+.content-body:last-child {
+    padding-bottom: 0px;
 }
 
 /* main ends */
@@ -129,20 +144,17 @@ span {
 
 .gallery-container {
     width: 100%;
-
 }
 
 .gallery-title {
     width: 100%;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
 }
 
 .gallery-main {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
+    width: 100%;
+    display: table;
 }
 
 .pokemon-img,
@@ -153,10 +165,9 @@ span {
 
 .image-div {
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 /* gallery ends */
@@ -165,16 +176,16 @@ span {
 
 .dil1-container {
     padding-top: 50px;
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-between;
+    padding-left: 5%;
 }
 
 #dil1-content {
     width: 90%;
+}
+
+#dil1-content:not(:last-child) {
+    padding-bottom: 20px;
 }
 
 #exc {
@@ -186,62 +197,27 @@ span {
 
 /* ----------------------page 2 ends------------------------ */
 
-.page3-container {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.game-container {
-    width: 55%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}   
-
-.dq-container,
-.sh2-container {
-    display: flex;
-    width: 100%;
-    gap: 40px;
-}
-
-.game-p-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
 .dq-img { 
     width: 250px;
-}
-
-.game-p {
-    width: 80%;
 }
 
 .sh2-img {
     height: 250px;
 }
 
-.special-container {
-    width: 500px;
-    height: 75vh;
-    background-color: #507687;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .gow-img {
     width: 350px;
 }
 
-.gow-p {
-    width: 90%;
-    color: #FCFAEE;
+#sp {
+    font-weight: bolder;
+}
+
+#dil1-content {
+    font-size: 18px;
+}
+
+#dil1-content:last-child {
+    padding-bottom: 30px;
 }
