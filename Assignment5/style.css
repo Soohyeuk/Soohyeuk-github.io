@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'pixelify_sans';
+    src: url('PixelifySans-VariableFont_wght.ttf');
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100vh;
+    font-family: 'pixelify_sans';
+    background-color: #FCFAEE;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+/* header */
+
+.header-container {
+    background-color: #384B70;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    
+    color: white;
+} 
+
+.left-container {
+    width: 20%;
+
+}
+
+.middle-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.right-container {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* header ends */
+
+
+
+/* hero */
+.hero-container {
+    width: 100%;
+    height: 450px;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-image {
+    height: 406px;
+}
+
+.arrow-asset {
+    height: 40px;
+}
+
+.arrow-asset:first-child {
+    padding-left: 10px;
+}
+
+.arrow-asset:last-child {
+    padding-right: 10px;
+}
+/* hero ends */
+
+
+/* main */
+.main-content {
+
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* main ends */
+
+/* ----------------------page 1 ends------------------------ */
+
+/* gallery */
+span {
+    color: #B8001F;
+}
+
+.gallery-container {
+    width: 100%;
+
+}
+
+.gallery-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.gallery-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.pokemon-img,
+.mario-img, 
+.yoshi-img {
+    width: 200px;
+}
+
+.image-div {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+/* gallery ends */
+
+/* content */
+
+.dil1-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dil1-content {
+    width: 90%;
+}
+
+#exc {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* content ends */
+
+/* ----------------------page 2 ends------------------------ */
+
+.page3-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.game-container {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}   
+
+.dq-container,
+.sh2-container {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.game-p-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dq-img { 
+    width: 250px;
+}
+
+.game-p {
+    width: 80%;
+}
+
+.sh2-img {
+    height: 250px;
+}
+
+.special-container {
+    width: 500px;
+    height: 75vh;
+    background-color: #507687;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gow-img {
+    width: 350px;
+}
+
+.gow-p {
+    width: 90%;
+    color: #FCFAEE;
+}
