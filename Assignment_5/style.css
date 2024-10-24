@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'pixelify_sans';
-    src: url('PixelifySans-VariableFont_wght.ttf');
+    src: url("AcPlus_IBM_EGA_8x14.ttf");
   }
 
 body {
@@ -29,7 +29,11 @@ h1, p {
 }
 
 h1 {
-    font-size: 27px;
+    font-size: 50px;
+}
+
+p, a {
+    font-size: 20px;
 }
 
 /* header */
@@ -66,7 +70,6 @@ h1 {
     display: flex;
     justify-content: space-evenly;
 }
-
 /* header ends */
 
 
@@ -78,7 +81,7 @@ h1 {
     background-color: black;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -86,23 +89,11 @@ h1 {
     height: 406px;
 }
 
-.arrow-asset {
-    height: 40px;
-}
-
-.arrow-asset:first-child {
-    padding-left: 10px;
-}
-
-.arrow-asset:last-child {
-    padding-right: 10px;
-}
 /* hero ends */
 
 
 /* main */
 .main-content {
-
     width: 100%;
     height: 280px;
     display: flex;
@@ -117,6 +108,8 @@ h1 {
     align-items: center;
 
 }
+
+
 
 /* main ends */
 
@@ -244,4 +237,17 @@ span {
 .gow-p {
     width: 90%;
     color: #FCFAEE;
+}
+
+
+/* media query only for the really big screens  */
+
+@media screen and (min-width: 2000px) {
+    p, a {
+        font-size: 27px;
+    }
+
+    .main-content {
+        height: 400px;
+    }
 }
