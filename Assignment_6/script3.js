@@ -1,6 +1,6 @@
 
 
-scr3Func = (arg1, arg2) => {
+let scr3Func = (arg1, arg2) => {
     console.log(arg1 + " " + arg2);
     alert(arg1 + " " + arg2);
 }

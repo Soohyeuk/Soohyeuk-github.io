@@ -1,6 +1,6 @@
 
 const var1 = 4; 
-scr4Func = (arg1) => {
+let scr4Func = (arg1) => {
     alert(arg1);
     console.log(arg1);
 }
