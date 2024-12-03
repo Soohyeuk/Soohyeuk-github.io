@@ -46,34 +46,29 @@
 //         document.body.style.overflow = ''; 
 //     });
 // });
-const scrollThreshold = 300; // Adjust this value as needed
+const scrollThreshold = 600; // Adjust this value as needed
 
-// Get the ad elements
 const leftAd = document.getElementById('leftAd');
 const rightAd = document.getElementById('rightAd');
 
-// Function to show the ads when the scroll position is passed
 function showAdsOnScroll() {
-    // Get the current scroll position
     const scrollPosition = window.scrollY;
 
-    // Check if the scroll position is past the threshold
     if (scrollPosition > scrollThreshold) {
-        leftAd.style.opacity = 1;  // Show left ad
-        leftAd.style.visibility = 'visible'; // Make it visible
+        leftAd.style.opacity = 1;  
+        leftAd.style.visibility = 'visible'; 
 
-        rightAd.style.opacity = 1; // Show right ad
-        rightAd.style.visibility = 'visible'; // Make it visible
+        rightAd.style.opacity = 1; 
+        rightAd.style.visibility = 'visible'; 
     } else {
-        leftAd.style.opacity = 0;  // Hide left ad
-        leftAd.style.visibility = 'hidden'; // Hide it from the view
+        leftAd.style.opacity = 0;
+        leftAd.style.visibility = 'hidden';
 
-        rightAd.style.opacity = 0; // Hide right ad
-        rightAd.style.visibility = 'hidden'; // Hide it from the view
+        rightAd.style.opacity = 0; 
+        rightAd.style.visibility = 'hidden'; 
     }
 }
 
-// Add scroll event listener
 window.addEventListener('scroll', showAdsOnScroll);
 
 const yesButton = document.querySelector('.yes-button');
@@ -109,21 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const image = document.querySelector('.game-image img');
-
-    if (image) {
-        gsap.from(image, {
-            opacity: 0,          
-            x: -200,
-            scale: 0.8,          
-            duration: 1.5,     
-            ease: "bounce.out",  
-            delay: 0.7,         
-            onComplete: () => console.log("Image animation complete")
-        });
-    }
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     let rellax = new Rellax('.rellax');

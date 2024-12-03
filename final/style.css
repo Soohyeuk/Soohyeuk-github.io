@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Tektur", sans-serif;
+    font-family: "Tektur", serif;
     font-optical-sizing: auto;
+    font-style: normal;
 }
 
 body {
@@ -42,6 +43,10 @@ hr {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.header-container p {
+    cursor: pointer;
 }
 
 .hidden {
@@ -173,11 +178,13 @@ hr {
     height: 100vh;
     z-index: 1000;
     background-color: #f0f0f0;
-    
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+}
+
+.first-part {
+    margin-top: 50px;
 }
 
 .main-content {
@@ -257,6 +264,8 @@ hr {
     margin-top: 20px;
     transition: background-color 0.3s;
 }
+
+
 /* AI part ends */ 
 
 
@@ -264,7 +273,6 @@ hr {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    width: 200px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -276,8 +284,8 @@ hr {
 .left {
     left: 0;
     margin-left: 20px;
-    height: 60vh;
-    width: 300px;
+    height: 60vw;
+    width: 250px;
     background-color: #ff5722;
 }
 
@@ -294,14 +302,14 @@ hr {
 .right {
     right: 0;
     margin-right: 20px;
-    height: 60vh;
-    width: 300px;
+    height: 60vw;
+    width: 250px;
     background-color: #252525;
 }
 
 .right h4 {
     color: rgb(142, 151, 47);
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .right p {
@@ -311,10 +319,9 @@ hr {
 
 
 .steam-section {
-    background-color: #4d8966;
-    color: white;
+    margin-top: 100px;
+    color: black;
     padding: 20px;
-    margin-top: 40px;
     text-align: center;
     width: 60%;
     border-radius: 10px;
@@ -323,6 +330,8 @@ hr {
 .grid {
     margin-top: 50px;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(auto-fit, 100px);
     grid-template-rows: repeat(auto, 100px);
     row-gap: 30px;
@@ -336,6 +345,6 @@ hr {
 
 @media screen and (max-height: 920px) {
     .content {
-        height: 300vh;
+        height: 200vh;
     }
 }
