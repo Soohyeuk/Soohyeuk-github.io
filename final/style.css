@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+hr {
+    display: block;
+    height: 1px;
+    width: 60vw;
+    border: 0;
+    border-top: 1px solid #0f0f0f;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 9999;
+    text-align: center;
+    background: #373183;
+    color: white;
+    padding: 20px 0;
+    visibility: visible;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Hero section starts */
+.hero-section {
+    background-color: #373183;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section h1 {
+    font-size: 120px;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.hero-section h2 {
+    width: 90%;
+    margin: 0;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.hero-section h2 span {
+    color: #f44336;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+/* Hero section ends */
+
+
+/* Cookie section starts */
+.cookie-popup {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.cookie-popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 1200px;
+    width: 1200px;
+}
+
+.popup-content h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.popup-content p {
+    font-size: 25px;
+}
+
+.popup-content span {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.cookie-options {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cookie-options button {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.big-font {
+    width: 500px;
+    height: 200px;
+    font-size: 1.5em;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.small-font {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+    background-color: #c9c9c9;
+    color: white;
+}
+/* Cookie section ends */
+
+
+/* AI part starts */ 
+.content {
+    padding: 30px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #f0f0f0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#ai-recommendations {
+    width: 50%;
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.yes-button {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 50px;
+    padding: 12px 30px; 
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.yes-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.yes-button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.5); 
+}
+
+.popup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.popup-content {
+    background: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    height: 500px;
+    text-align: center;
+}
+
+.close-button {
+    background-color: #2575fc; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+/* AI part ends */ 
+
+
+.ad {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.left {
+    left: 0;
+    margin-left: 20px;
+    height: 60vh;
+    width: 300px;
+    background-color: #ff5722;
+}
+
+.left h4 {
+    color: yellow;
+    font-size: 25px;
+}
+
+.left p {
+    color: white;
+    font-size: 25px;
+}
+
+.right {
+    right: 0;
+    margin-right: 20px;
+    height: 60vh;
+    width: 300px;
+    background-color: #252525;
+}
+
+.right h4 {
+    color: rgb(142, 151, 47);
+    font-size: 40px;
+}
+
+.right p {
+    color: white;
+    font-size: 25px;
+}
+
+
+.steam-section {
+    background-color: #4d8966;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(auto, 100px);
+    row-gap: 30px;
+    column-gap: 50px;
+}
+
+
+.span {
+    display: inline-block;
+}
+
+@media screen and (max-height: 920px) {
+    .content {
+        height: 300vh;
+    }
+}
